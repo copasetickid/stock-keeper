@@ -2,7 +2,7 @@
 
 <ul>
   {{#each model as |store|}}
-   {{#link-to "stores.store" store}}{{store.name}}{{/link-to}}
+   {{#link-to "stores.edit" store}}{{store.name}}{{/link-to}}
   {{/each}}
 </ul>
 {{outlet}}

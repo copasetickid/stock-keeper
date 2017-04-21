@@ -2,10 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('store');
-  },
-
-  afterModel(model) {
-    
+    return this.store.query('store', { include: 'stock-items'});
   }
 });
